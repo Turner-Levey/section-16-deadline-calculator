@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Section 16 Deadline Calculator</title>
+  <desc id="desc">Social preview for a no-tracking SEC Forms 3, 4, and 5 deadline calculator.</desc>
+  <rect width="1200" height="630" fill="#edf1f7"/>
+  <path d="M0 0h1200v144H0z" fill="#1d4ed8"/>
+  <path d="M900 0h300v630H900z" fill="#fff7ed"/>
+  <circle cx="1014" cy="224" r="96" fill="#b45309"/>
+  <text x="955" y="250" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="900">16</text>
+  <rect x="86" y="96" width="760" height="438" rx="24" fill="#ffffff" stroke="#cfd8e5" stroke-width="3"/>
+  <text x="132" y="178" fill="#1e3a8a" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">LOCAL-FIRST SEC OWNERSHIP WORKSHEET</text>
+  <text x="132" y="270" fill="#142033" font-family="Inter, Arial, sans-serif" font-size="78" font-weight="900">Section 16</text>
+  <text x="132" y="352" fill="#142033" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="900">Deadline Calculator</text>
+  <text x="132" y="425" fill="#526174" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Forms 3, 4, and 5. Memo + CSV export.</text>
+  <text x="132" y="485" fill="#1d4ed8" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="850">section-16-deadline-calculator.vercel.app</text>
+  <rect x="930" y="374" width="216" height="78" rx="16" fill="#1d4ed8"/>
+  <text x="956" y="426" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="900">3 / 4 / 5</text>
+  <text x="944" y="494" fill="#142033" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="850">10 days</text>
+  <text x="944" y="534" fill="#142033" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="850">2 business days</text>
+</svg>

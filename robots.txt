@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://section-16-deadline-calculator.vercel.app/sitemap.xml

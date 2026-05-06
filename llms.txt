@@ -1,0 +1,25 @@
+# Section 16 Deadline Calculator
+
+> Free local-first, no-tracking Section 16 deadline calculator for SEC Forms 3, 4, and 5 insider reporting date planning.
+
+Site: https://section-16-deadline-calculator.vercel.app/
+Source: https://github.com/Turner-Levey/section-16-deadline-calculator
+Preview image: https://section-16-deadline-calculator.vercel.app/preview.png
+IndexNow key file: https://section-16-deadline-calculator.vercel.app/4f2e8d9c6b7a4f3a9e1c0d8b6a2f4c1e.txt
+
+## Tool
+
+- [Section 16 Deadline Calculator](https://section-16-deadline-calculator.vercel.app/): Estimate common SEC Form 3, Form 4, and Form 5 reporting target dates, copy a source-linked memo, or export a CSV planning row.
+
+## Related Standalone SEC Tools
+
+- [SEC Filing Fee Calculator](https://sec-filing-fee-calculator.vercel.app/): Estimate SEC filing fees from aggregate amount or shares times price, subtract a prior fee offset, copy a memo, or download an EX-FILING-FEES review row.
+- [Schedule 13D / 13G Deadline Calculator](https://sec-13d-13g-deadline-calculator.vercel.app/): Estimate common beneficial ownership reporting target dates, copy a source-linked memo, or export a CSV planning row.
+- [Form D Deadline Calculator](https://form-d-deadline-calculator.vercel.app/): Estimate a Form D notice target date from a Regulation D first-sale date, copy a source-linked memo, or export a CSV planning row.
+
+## Notes
+
+- Runs entirely in the browser.
+- No signup, cookies, analytics, beacons, uploads, external scripts, or browser storage.
+- Handles Form 3, Form 4, and Form 5 date planning, standard U.S. federal holidays, optional extra SEC closure dates, and EDGAR cutoff reminders.
+- Informational worksheet only; not legal advice, securities advice, investment advice, beneficial ownership analysis, late-filing cure advice, EDGAR validation, SEC affiliation, or an EDGAR filing service.
