@@ -154,6 +154,30 @@
     return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
   }
 
+  function icsDate(date) {
+    return toIsoDate(date).replaceAll("-", "");
+  }
+
+  function icsDateTime(date) {
+    return `${date.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z")}`;
+  }
+
+  function icsEscape(value) {
+    return String(value ?? "")
+      .replaceAll("\\", "\\\\")
+      .replaceAll("\n", "\\n")
+      .replaceAll(";", "\\;")
+      .replaceAll(",", "\\,");
+  }
+
+  function slugPart(value) {
+    return String(value ?? "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "")
+      .slice(0, 40) || "section-16";
+  }
+
   function edgarAction(statusValue, dueDate) {
     if (statusValue === "EDGAR access and codes confirmed") {
       return `EDGAR access is marked confirmed; plan direct transmission by 10 p.m. Eastern on ${formatDate(dueDate)}.`;
@@ -356,6 +380,43 @@
     return `${headers.join(",")}\n${row.map(csvEscape).join(",")}\n`;
   }
 
+  function buildIcs(data) {
+    const summary = `${data.form} target: ${data.reportingPerson} / ${data.issuer}`;
+    const description = [
+      `${data.form} ${data.scenarioLabel} planning target: ${formatDate(data.adjustedDueDate)}.`,
+      `Trigger date: ${formatDate(data.triggerDate)}.`,
+      `Status: ${data.statusLabel}.`,
+      `EDGAR note: ${data.edgarNote}`,
+      `Next step: ${data.nextStep}`,
+      "Informational planning worksheet only; confirm Section 16 filing obligations with counsel."
+    ].join("\n");
+    const uid = [
+      "section-16",
+      data.csvKey,
+      icsDate(data.adjustedDueDate),
+      slugPart(data.reportingPerson),
+      slugPart(data.issuer)
+    ].join("-");
+    return [
+      "BEGIN:VCALENDAR",
+      "VERSION:2.0",
+      "PRODID:-//Turner Levey//Section 16 Deadline Calculator//EN",
+      "CALSCALE:GREGORIAN",
+      "METHOD:PUBLISH",
+      "BEGIN:VEVENT",
+      `UID:${uid}@section-16-deadline-calculator.vercel.app`,
+      `DTSTAMP:${icsDateTime(new Date())}`,
+      `DTSTART;VALUE=DATE:${icsDate(data.adjustedDueDate)}`,
+      `DTEND;VALUE=DATE:${icsDate(addCalendarDays(data.adjustedDueDate, 1))}`,
+      `SUMMARY:${icsEscape(summary)}`,
+      `DESCRIPTION:${icsEscape(description)}`,
+      "URL:https://section-16-deadline-calculator.vercel.app/",
+      "END:VEVENT",
+      "END:VCALENDAR",
+      ""
+    ].join("\r\n");
+  }
+
   function setButtonCopied(button) {
     const original = button.textContent;
     button.textContent = "Copied";
@@ -418,6 +479,16 @@
     const link = document.createElement("a");
     link.href = url;
     link.download = "section-16-deadline.csv";
+    link.click();
+    URL.revokeObjectURL(url);
+  });
+  document.querySelector("#download-ics").addEventListener("click", () => {
+    const data = calculate();
+    const blob = new Blob([buildIcs(data)], { type: "text/calendar" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `${data.csvKey}-section-16-deadline.ics`;
     link.click();
     URL.revokeObjectURL(url);
   });

@@ -6,10 +6,10 @@ Free no-tracking Section 16 deadline calculator for SEC Forms 3, 4, and 5 date p
 - Form 4 change-in-beneficial-ownership target from a transaction or verified deemed execution date.
 - Form 5 annual catch-up target from the issuer fiscal year end.
 - Weekend, standard U.S. federal holiday, and optional custom closure handling.
-- EDGAR 10 p.m. Eastern cutoff note, source-linked memo copy, and CSV export.
+- EDGAR 10 p.m. Eastern cutoff note, source-linked memo copy, CSV export, and ICS calendar export.
 - Current foreign private issuer / HFIA Act verification reminder.
 
-The tool runs entirely in the browser. It has no signup, cookies, analytics, beacons, external scripts, uploads, or browser storage.
+The tool runs entirely in the browser. It has no signup, cookies, analytics, beacons, external scripts, uploads, or browser storage. Calendar export creates a local `.ics` planning hold from the calculated target date.
 
 Live site: https://section-16-deadline-calculator.vercel.app/
 

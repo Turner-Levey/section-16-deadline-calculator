@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Section 16 Deadline Calculator</title>
-    <meta name="description" content="Free no-tracking Section 16 Forms 3, 4, and 5 deadline calculator for insider reporting date planning, EDGAR cutoff notes, memo copy, and CSV export.">
+    <meta name="description" content="Free no-tracking Section 16 Forms 3, 4, and 5 deadline calculator for insider reporting date planning, EDGAR cutoff notes, memo copy, CSV export, and ICS calendar export.">
     <meta name="robots" content="index,follow">
     <meta name="nologin-verified" content="section-16-deadline-calculator-vercel-app">
     <link rel="canonical" href="https://section-16-deadline-calculator.vercel.app/">
     <meta property="og:title" content="Section 16 Deadline Calculator">
-    <meta property="og:description" content="Calculate common SEC Forms 3, 4, and 5 reporting target dates locally in your browser. No signup, no tracking, no uploaded data.">
+    <meta property="og:description" content="Calculate common SEC Forms 3, 4, and 5 reporting target dates locally in your browser, then export a memo, CSV row, or calendar hold.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://section-16-deadline-calculator.vercel.app/">
     <meta property="og:image" content="https://section-16-deadline-calculator.vercel.app/preview.png">
@@ -74,7 +74,7 @@
           <div>
             <p class="eyebrow">Local-first SEC ownership worksheet</p>
             <h1 id="page-title">Section 16 Deadline Calculator</h1>
-            <p class="lede">Estimate common SEC Forms 3, 4, and 5 insider reporting target dates, then copy a source-linked memo or CSV row for a legal, compliance, finance, issuer-ops, or EDGAR filing checklist.</p>
+            <p class="lede">Estimate common SEC Forms 3, 4, and 5 insider reporting target dates, then copy a source-linked memo, CSV row, or calendar hold for a legal, compliance, finance, issuer-ops, or EDGAR filing checklist.</p>
           </div>
           <div class="date-badge" aria-label="Section 16 reporting windows">
             <span>3 / 4 / 5</span>
@@ -163,8 +163,9 @@
             <button type="button" id="copy-memo">Copy memo</button>
             <button type="button" id="copy-csv">Copy CSV row</button>
             <button type="button" id="download-csv">Download CSV</button>
+            <button type="button" id="download-ics">Download calendar hold</button>
           </div>
-          <p class="rate-note">Weekend and standard U.S. federal holiday handling is included for planning. Add emergency SEC closure dates manually when applicable.</p>
+          <p class="rate-note">Weekend and standard U.S. federal holiday handling is included for planning. Add emergency SEC closure dates manually when applicable. The calendar file is a local planning hold, not an official filing confirmation.</p>
         </form>
       </section>
 
@@ -196,6 +197,7 @@
                 <tr><td>Form 4 ownership change</td><td>Second business day after the entered transaction or deemed execution date</td></tr>
                 <tr><td>Form 5 annual report</td><td>45-calendar-day fiscal-year-end target, adjusted to a business-day planning date when needed</td></tr>
                 <tr><td>EDGAR timing</td><td>Same-business-day cutoff reminder for 10 p.m. Eastern transmission</td></tr>
+                <tr><td>Calendar handoff</td><td>Download an all-day ICS planning hold for the calculated target date</td></tr>
                 <tr><td>FPI / HFIA flag</td><td>Reminder to verify current foreign private issuer director/officer transition rules</td></tr>
               </tbody>
             </table>
