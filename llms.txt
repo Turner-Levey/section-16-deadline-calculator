@@ -1,6 +1,6 @@
-# Section 16 Deadline Calculator
+# Section 16 / Form 4 Deadline Calculator
 
-> Free local-first, no-tracking Section 16 deadline calculator for SEC Forms 3, 4, and 5 insider reporting date planning.
+> Free local-first, no-tracking Section 16 and Form 4 deadline calculator for SEC Forms 3, 4, and 5 insider reporting date planning.
 
 Site: https://section-16-deadline-calculator.vercel.app/
 Source: https://github.com/Turner-Levey/section-16-deadline-calculator
@@ -12,7 +12,7 @@ IndexNow key file: https://section-16-deadline-calculator.vercel.app/4f2e8d9c6b7
 
 ## Tool
 
-- [Section 16 Deadline Calculator](https://section-16-deadline-calculator.vercel.app/): Estimate common SEC Form 3, Form 4, and Form 5 reporting target dates, copy a source-linked memo, export a CSV planning row, or download an ICS calendar hold.
+- [Section 16 / Form 4 Deadline Calculator](https://section-16-deadline-calculator.vercel.app/): Estimate common SEC Form 3, Form 4, and Form 5 reporting target dates, copy a source-linked memo, export a CSV planning row, or download an ICS calendar hold.
 
 ## Related Standalone SEC Tools
 
@@ -25,4 +25,5 @@ IndexNow key file: https://section-16-deadline-calculator.vercel.app/4f2e8d9c6b7
 - Runs entirely in the browser.
 - No signup, cookies, analytics, beacons, uploads, external scripts, or browser storage.
 - Handles Form 3, Form 4, and Form 5 date planning, standard U.S. federal holidays, optional extra SEC closure dates, EDGAR cutoff reminders, CSV export, and ICS calendar export.
+- Form 4 planning baseline: two business days following the transaction date, with verification reminders for deemed execution dates, exemptions, reporting-person status, and EDGAR readiness.
 - Informational worksheet only; not legal advice, securities advice, investment advice, beneficial ownership analysis, late-filing cure advice, EDGAR validation, SEC affiliation, or an EDGAR filing service.

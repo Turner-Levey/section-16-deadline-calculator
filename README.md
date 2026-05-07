@@ -1,6 +1,6 @@
-# Section 16 Deadline Calculator
+# Section 16 / Form 4 Deadline Calculator
 
-Free no-tracking Section 16 deadline calculator for SEC Forms 3, 4, and 5 date planning:
+Free no-tracking Section 16 deadline calculator for SEC Forms 3, 4, and 5 date planning, with sharper Form 4 deadline workflow copy:
 
 - Form 3 initial beneficial ownership target from the insider status date.
 - Form 4 change-in-beneficial-ownership target from a transaction or verified deemed execution date.
@@ -10,6 +10,8 @@ Free no-tracking Section 16 deadline calculator for SEC Forms 3, 4, and 5 date p
 - Current foreign private issuer / HFIA Act verification reminder.
 
 The tool runs entirely in the browser. It has no signup, cookies, analytics, beacons, external scripts, uploads, or browser storage. Calendar export creates a local `.ics` planning hold from the calculated target date.
+
+Form 4 planning baseline: SEC investor materials describe the usual Form 4 deadline as two business days following the transaction date. The worksheet also keeps the Form 3 10-day and Form 5 45-day baselines visible for checklist review, without deciding reporting-person status, exemptions, or transaction treatment.
 
 Live site: https://section-16-deadline-calculator.vercel.app/
 

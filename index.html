@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Section 16 Deadline Calculator</title>
-    <meta name="description" content="Free no-tracking Section 16 Forms 3, 4, and 5 deadline calculator for insider reporting date planning, EDGAR cutoff notes, memo copy, CSV export, and ICS calendar export.">
+    <title>Section 16 / Form 4 Deadline Calculator</title>
+    <meta name="description" content="Free no-tracking Section 16 and Form 4 deadline calculator for Forms 3, 4, and 5 insider reporting date planning, EDGAR cutoff notes, memo copy, CSV export, and ICS calendar export.">
     <meta name="robots" content="index,follow">
     <meta name="nologin-verified" content="section-16-deadline-calculator-vercel-app">
     <link rel="canonical" href="https://section-16-deadline-calculator.vercel.app/">
-    <meta property="og:title" content="Section 16 Deadline Calculator">
-    <meta property="og:description" content="Calculate common SEC Forms 3, 4, and 5 reporting target dates locally in your browser, then export a memo, CSV row, or calendar hold.">
+    <meta property="og:title" content="Section 16 / Form 4 Deadline Calculator">
+    <meta property="og:description" content="Calculate common SEC Form 3, Form 4, and Form 5 reporting target dates locally in your browser, then export a memo, CSV row, or calendar hold.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://section-16-deadline-calculator.vercel.app/">
     <meta property="og:image" content="https://section-16-deadline-calculator.vercel.app/preview.png">
@@ -23,11 +23,11 @@
         "@graph": [
           {
             "@type": "SoftwareApplication",
-            "name": "Section 16 Deadline Calculator",
+            "name": "Section 16 / Form 4 Deadline Calculator",
             "applicationCategory": "FinanceApplication",
             "operatingSystem": "Any",
             "url": "https://section-16-deadline-calculator.vercel.app/",
-            "description": "Free no-tracking browser-only deadline worksheet for SEC Forms 3, 4, and 5 insider reporting date planning.",
+            "description": "Free no-tracking browser-only Form 3, Form 4, and Form 5 deadline worksheet for Section 16 insider reporting date planning.",
             "offers": {
               "@type": "Offer",
               "price": "0",
@@ -43,6 +43,38 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "It turns a Form 3, Form 4, or Form 5 trigger date into a planning target date, then creates a source-linked memo and CSV row."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the Form 4 filing deadline?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SEC investor materials describe the usual Form 4 deadline as two business days following the transaction date. This worksheet applies that planning rule, but it does not decide whether a transaction, exception, or deemed execution date changes the filing analysis."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the Form 3 filing deadline?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SEC investor materials describe Form 3 as the initial insider ownership report and state that it must be filed within 10 days after the person becomes an insider."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the Form 5 deadline?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SEC investor materials describe Form 5 as generally due no later than 45 days after the issuer fiscal year ends for certain deferred or unreported transactions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What EDGAR filing cutoff should the plan consider?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SEC Submit Filings materials state that EDGAR accepts filings from 6 a.m. to 10 p.m. Eastern on weekdays except federal holidays, and that filings made outside those times are processed the next business day."
                 }
               },
               {
@@ -73,8 +105,8 @@
         <div class="mast">
           <div>
             <p class="eyebrow">Local-first SEC ownership worksheet</p>
-            <h1 id="page-title">Section 16 Deadline Calculator</h1>
-            <p class="lede">Estimate common SEC Forms 3, 4, and 5 insider reporting target dates, then copy a source-linked memo, CSV row, or calendar hold for a legal, compliance, finance, issuer-ops, or EDGAR filing checklist.</p>
+            <h1 id="page-title">Section 16 / Form 4 Deadline Calculator</h1>
+            <p class="lede">Estimate common SEC Form 3, Form 4, and Form 5 insider reporting target dates, then copy a source-linked memo, CSV row, or calendar hold for a legal, compliance, finance, issuer-ops, or EDGAR filing checklist.</p>
           </div>
           <div class="date-badge" aria-label="Section 16 reporting windows">
             <span>3 / 4 / 5</span>
@@ -211,6 +243,12 @@
         </div>
         <div class="faq">
           <h2>FAQ</h2>
+          <h3>What is the Form 4 filing deadline?</h3>
+          <p>SEC investor materials describe the usual Form 4 deadline as two business days following the transaction date. Use the calculator output as a planning target, then verify transaction code, exemption status, deemed execution date rules, signature authority, and EDGAR readiness.</p>
+          <h3>What are the Form 3 and Form 5 deadline baselines?</h3>
+          <p>SEC investor materials describe Form 3 as due within 10 days after a person becomes an insider, and Form 5 as generally due no later than 45 days after the issuer's fiscal year ends for certain deferred or unreported transactions.</p>
+          <h3>What EDGAR cutoff should the plan consider?</h3>
+          <p>SEC Submit Filings materials state that EDGAR accepts filings from 6 a.m. to 10 p.m. Eastern on weekdays except federal holidays, and filings made outside those times are processed the next business day.</p>
           <h3>Why does Form 4 use business days?</h3>
           <p>SEC rule materials describe the accelerated Form 4 deadline as two business days after the transaction date, with limited deemed-execution-date handling for specific transactions. This calculator does not decide whether those exceptions apply.</p>
           <h3>Does this cover foreign private issuer changes?</h3>
