@@ -17,6 +17,10 @@ Source: https://github.com/Turner-Levey/section-16-deadline-calculator
 
 ![Section 16 Deadline Calculator preview](https://section-16-deadline-calculator.vercel.app/preview.png)
 
+No-Login Tools listing: https://nologin.tools/tool/section-16-deadline-calculator-vercel-app/
+
+No-Login Tools certificate: https://nologin.tools/badge/section-16-deadline-calculator-vercel-app/
+
 Related standalone SEC tools:
 
 - SEC Filing Fee Calculator: https://sec-filing-fee-calculator.vercel.app/
