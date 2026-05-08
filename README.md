@@ -21,6 +21,8 @@ Source: https://github.com/Turner-Levey/section-16-deadline-calculator
 
 Tiny Tool Town listing: https://www.tinytooltown.com/tools/section-16-deadline-calculator/
 
+Awesome SEC Filings listing: https://github.com/vibeyclaw/awesome-sec-filings#general-sec-filings
+
 No-Login Tools listing: https://nologin.tools/tool/section-16-deadline-calculator-vercel-app/
 
 No-Login Tools certificate: https://nologin.tools/badge/section-16-deadline-calculator-vercel-app/
