@@ -23,6 +23,8 @@ Tiny Tool Town listing: https://www.tinytooltown.com/tools/section-16-deadline-c
 
 Awesome SEC Filings listing: https://github.com/vibeyclaw/awesome-sec-filings#general-sec-filings
 
+Awesome OSINT listing: https://github.com/jivoi/awesome-osint#company-research
+
 No-Login Tools listing: https://nologin.tools/tool/section-16-deadline-calculator-vercel-app/
 
 No-Login Tools certificate: https://nologin.tools/badge/section-16-deadline-calculator-vercel-app/
